@@ -1,0 +1,22 @@
+{
+    "python.languageServer": "Pylance",
+    "python-envs.pythonProjects": [
+        {
+            "path": "",
+            "envManager": "ms-python.python:conda",
+            "packageManager": "ms-python.python:conda"
+        }
+    ],
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    // the following lines turn off autoformatting for editing non-formatted code minimally invasively
+    // uncomment when working on stardist/bioimageio_utils.py or tests/test_bioimageio.py
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.unusedImports": "never",
+        "source.organizeImports": "never"
+    },
+}

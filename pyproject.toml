@@ -17,3 +17,17 @@ testpaths = ["tests"]
 # filterwarnings = [
 #     "ignore::pytest.PytestReturnNotNoneWarning"
 # ]
+
+[tool.pylance]
+languageServerMode = "light"
+include = ["stardist/bioimageio_utils.py", "tests/test_bioimageio.py"]
+
+[tool.pyright]
+pythonVersion = "3.6"
+pythonPlatform = "All"
+include = ["stardist/bioimageio_utils.py", "tests/test_bioimageio.py"]
+reportUnnecessaryIsInstance = false
+
+[tool.ruff]
+include = ["stardist/bioimageio_utils.py", "tests/test_bioimageio.py"]
+target-version = "py37" # py36 is not supported
